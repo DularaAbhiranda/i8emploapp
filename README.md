@@ -1,18 +1,37 @@
 # INNOV8 Datadog Observability Lab
 
-## Overview
+A full-stack application demonstrating enterprise-grade observability, monitoring, and audit logging.
 
-This is a production-grade Spring Boot 3 backend application configured as a **Datadog Observability Lab**. It simulates a real-world high-traffic environment with:
+## 🎯 Quick Start
 
-- **Advanced Background Processing** for APM traces
-- **Structured JSON Logging** for centralized log analysis
-- **Chaos & Error Simulation** for testing alerting
-- **Metrics Exposure** via Spring Boot Actuator
-- **MDC-based Request Tracing** for distributed tracing
+### Prerequisites
+- Java 21+
+- Node.js 20+
+- npm 10+
+
+### Run the Application
+
+**Terminal 1 - Backend (Spring Boot)**
+```bash
+cd c:\Users\abhir\Desktop\Project
+java -jar target/innov8-observability-lab-1.0.0.jar
+# Or: mvn package -DskipTests && java -jar target/innov8-observability-lab-1.0.0.jar
+```
+
+**Terminal 2 - Frontend (React + Vite)**
+```bash
+cd c:\Users\abhir\Desktop\Project\frontend
+npm run dev
+```
+
+**Access the Application**
+- **Frontend**: http://localhost:5174
+- **Backend API**: http://localhost:8081/api
+- **Health Check**: http://localhost:8081/api/actuator/health
 
 ---
 
-## Architecture & Features
+## 🏗️ Architecture & Features
 
 ### 1. **Advanced Background Processing** 🚀
 
